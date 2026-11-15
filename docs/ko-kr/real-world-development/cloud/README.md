@@ -19,7 +19,7 @@ lastUpdated: 2026-06-30
 | [2. Cloud agent][ex2] | 비동기 에이전트 | 이슈를 GitHub Copilot cloud agent에 할당합니다 |
 | [3. 사용자 지정 에이전트][ex3] | 특화된 에이전트 | 사용자 지정 에이전트를 검토하고 사용합니다 |
 | [4. 에이전트 관리][ex4] | 모니터링 | 에이전트 세션을 모니터링하고 안내합니다 |
-| [5. 반복 개선][ex5] | 검토 | PR을 검토하고 Copilot의 작업을 반복 개선한 뒤 다음 단계를 선택합니다 |
+| [5. 반복 개선][ex5] | 검토 | 풀 리퀘스트(PR)를 검토하고 Copilot의 작업을 반복 개선한 뒤 다음 단계를 선택합니다 |
 
 ## 사전 준비
 
@@ -29,7 +29,7 @@ lastUpdated: 2026-06-30
 - [ ] 계정 또는 조직에서 GitHub Copilot cloud agent가 활성화되어 있어야 합니다.
 
 > [!TIP]
-> 유료 플랜이 없습니까? 인증된 학생은 [GitHub Education][callout-student-plan-education]을 통해 GitHub Copilot을 무료로 사용할 수 있습니다. **Copilot Student** 플랜에는 이 워크숍에서 사용하는 agent, MCP, 코드 검토, Copilot CLI 기능이 포함되어 있으므로 모든 실습 과정을 완료할 수 있습니다.
+> 유료 플랜이 없습니까? 인증된 학생은 [GitHub Education][callout-student-plan-education]을 통해 GitHub Copilot을 무료로 사용할 수 있습니다. **Copilot Student** 플랜에는 이 워크숍에서 사용하는 agent, Model Context Protocol(MCP), 코드 검토, Copilot 명령줄 인터페이스(CLI) 기능이 포함되어 있으므로 모든 실습 과정을 완료할 수 있습니다.
 
 [callout-student-plan-education]: https://github.com/education/students
 

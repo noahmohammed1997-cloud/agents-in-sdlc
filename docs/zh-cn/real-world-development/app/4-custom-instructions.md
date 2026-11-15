@@ -6,7 +6,7 @@ authors:
 lastUpdated: 2026-07-09
 ---
 
-使用生成式 AI 时，上下文至关重要。如果任务需要以特定方式完成，就应向 Copilot 提供相应指导。[指令文件][instruction-files]不仅说明需要什么代码，还说明代码应如何组织。现在筛选功能已构建完成，你将探索 Copilot 使用的指令、添加文档标准，并将其应用于代码。
+使用生成式人工智能（AI）时，上下文至关重要。如果任务需要以特定方式完成，就应向 Copilot 提供相应指导。[指令文件][instruction-files]不仅说明需要什么代码，还说明代码应如何组织。现在筛选功能已构建完成，你将探索 Copilot 使用的指令、添加文档标准，并将其应用于代码。
 
 本课将介绍如何：
 
@@ -31,7 +31,7 @@ lastUpdated: 2026-07-09
 
 指令文件分为两类：
 
-- `.github/copilot-instructions.md`：每次针对存储库的请求都会发送给 Copilot 的单个指令文件。此文件应包含项目级信息，即与大多数发送给 Copilot 的聊天或 CLI 请求相关的上下文，例如所用技术栈、正在构建的内容概述、最佳实践和其他全局指导。
+- `.github/copilot-instructions.md`：每次针对存储库的请求都会发送给 Copilot 的单个指令文件。此文件应包含项目级信息，即与大多数发送给 Copilot 的聊天或命令行界面（CLI）请求相关的上下文，例如所用技术栈、正在构建的内容概述、最佳实践和其他全局指导。
 - `.github/instructions/*.instructions.md`：可针对特定任务或文件类型创建。可以用它们为特定语言（如 TypeScript 或 Astro）提供准则，也可以为创建 UI 组件或一组新单元测试等任务提供指导。
 
 > [!NOTE]
@@ -46,7 +46,7 @@ lastUpdated: 2026-07-09
 
    ![GitHub Copilot app 顶部工具栏，箭头指向 Create PR 右侧的 Toggle review panel 按钮](../../../_images/app-2-review-panel.png)
 
-3. 选择 **+** 图标以“Open in panel”，打开新画布。
+3. 选择 **+** 图标并选择 **Open in panel**，打开新画布。
 4. 选择 **Files**。
 5. 选择 **Gear** 图标，确保 **Show hidden files** 旁有勾选标记。
 6. 转到 `.github/copilot-instructions.md`。
@@ -64,8 +64,9 @@ lastUpdated: 2026-07-09
 > 指令文件对 Copilot 生成的代码影响很大，因此应确保它们能清晰地引导 Copilot。可以先让 Copilot 创建初稿，再自行审查更新是否符合要求。[Awesome Copilot 上的指令文件集合][awesome-copilot]也可作为很好的起点。
 
 1. 在同一个 Files 画布中，转到 `.github/copilot-instructions.md`。
-2. 找到文件中部附近的 **Code formatting requirements** 标题。
-3. 在该标题下方添加以下最后一个列表项：
+2. 在文件工具栏中选择 **code** 按钮（`<>` 图标），切换到可编辑的源代码视图。
+3. 找到文件中部附近的 **Code formatting requirements** 标题。
+4. 在该标题下方添加以下最后一个列表项：
 
    ```plaintext
    All new TypeScript should contain TSDocs comments for documentation purposes.
